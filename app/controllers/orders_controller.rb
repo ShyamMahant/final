@@ -80,4 +80,5 @@ before_action :ensure_cart_isnt_empty, only: :new
     def order_params
       params.require(:order).permit(:name, :address, :email, :pay_type)
     end
-end
+  end
+end 
